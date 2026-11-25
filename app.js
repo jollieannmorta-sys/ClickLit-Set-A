@@ -1,4 +1,4 @@
-/* Reading Fundamentals – app logic. Content lives in data.js */
+/* ClickLit Set A – app logic. Content lives in data.js */
 (function () {
   "use strict";
 
@@ -164,8 +164,8 @@
       h("div", { class: "school-card" },
         h("img", { src: SITE.logo, alt: SITE.school + " logo" }),
         h("div", {}, h("div", { class: "sn" }, SITE.school), h("div", { class: "sp" }, "📍 " + SITE.place))),
-      h("div", { class: "ribbon" }, "👩‍🏫 " + SITE.corner),
-      h("h1", { class: "hero" }, rainbow("Let's read!"), " 📖"),
+      h("div", { class: "ribbon" }, "🖱️ " + SITE.corner),
+      h("h1", { class: "hero" }, rainbow(SITE.title), " 📖"),
       h("div", { class: "owl" },
         h("span", { class: "owl-face" }, "🦉"),
         h("div", { class: "bubble" }, "Hoot hoot! I'm Owly, " + SITE.owner + "'s helper. Pick a level and let's read together. Listen first, then read it yourself!"))
@@ -480,12 +480,12 @@
     draw();
   }
 
-  document.title = SITE.title;
+  document.title = SITE.title + " – " + SITE.tagline;
   const credit = document.getElementById("credit");
   if (credit) credit.textContent = "👩‍🏫 Made with ❤️ by " + SITE.owner;
   const hs = document.getElementById("homeSchool"), ht = document.getElementById("homeTitle"), fs = document.getElementById("footSchool");
   if (ht) ht.textContent = SITE.title;
-  if (hs) hs.textContent = SITE.school;
+  if (hs) hs.textContent = SITE.tagline;
   if (fs) fs.textContent = SITE.school + " · " + SITE.place;
   document.getElementById("homeBtn").addEventListener("click", home);
   home();

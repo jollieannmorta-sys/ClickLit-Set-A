@@ -1,4 +1,6 @@
-# Teacher Jollie's Reading Fundamentals
+# ClickLit Set A
+
+**ClickLit: Clicking Toward Literacy** · by Teacher Jollie · Froilan E. Lopez Elementary School, Tayabas City
 
 A free reading-practice website for pupils, from phonics to comprehension. Every activity has a **Listen** button (the pupil hears the word or sentence) and a **🎤 Say it / Read it** check-up (the browser listens and shows which words were read correctly).
 
@@ -29,7 +31,7 @@ On the home screen:
 - **Class record sheet** is a blank grid (name, L1–L8, pronunciation rating, remarks) for you to fill in by hand. Set the number of pupils, then press Print.
 
 ## Put it online with GitHub Pages
-1. Create a new repository on GitHub (e.g. `reading-fundamentals`).
+1. Create a new repository on GitHub (e.g. `ClickLit-Set-A`).
 2. Upload these files: `index.html`, `styles.css`, `data.js`, `app.js`, `README.md`.
 3. Open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then Save.
 4. After a minute, your site is live at `https://<your-username>.github.io/<repository-name>/`.

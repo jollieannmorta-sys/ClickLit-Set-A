@@ -32,12 +32,14 @@ body{
   background:linear-gradient(90deg,#ef476f,#f77f00,#e0a800,#06a77d,#118ab2,#7b4bd6);
   border-bottom:6px solid #fff;box-shadow:0 4px 0 rgba(0,0,0,.08);
 }
-.logo{display:flex;align-items:center;gap:10px;min-width:0;background:none;border:0;color:#fff;font:inherit;font-size:clamp(.95rem,4vw,1.3rem);font-weight:800;cursor:pointer;text-align:left;line-height:1.15;text-shadow:0 2px 0 rgba(0,0,0,.25)}
+.logo{display:flex;align-items:center;gap:10px;flex:1 1 auto;min-width:0;background:none;border:0;color:#fff;font:inherit;font-size:clamp(.95rem,4vw,1.3rem);font-weight:800;cursor:pointer;text-align:left;line-height:1.15;text-shadow:0 2px 0 rgba(0,0,0,.25)}
 .brand-logo{width:48px;height:48px;flex:none;object-fit:contain;filter:drop-shadow(0 2px 0 rgba(0,0,0,.25))}
 .brand-text{display:block;min-width:0}
 .brand-text small{display:block;font-size:.62em;font-weight:600;opacity:.95;margin-top:2px}
-.who{font-size:1rem;font-weight:800;background:rgba(255,255,255,.28);padding:4px 12px;border-radius:99px;white-space:nowrap}
-.top .right{display:flex;gap:8px;align-items:center}
+.who{font-size:1rem;font-weight:800;background:rgba(255,255,255,.28);padding:4px 12px;border-radius:99px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:min(46vw,230px)}
+.top .right{display:flex;gap:8px;align-items:center;flex:none;min-width:0}
+#homeTitle{white-space:nowrap}
+@media (max-width:560px){.brand-text small{display:none}.brand-logo{width:42px;height:42px}.who{max-width:38vw;font-size:.9rem;padding:4px 10px}}
 #soundBtn{border:0;border-radius:99px;background:rgba(255,255,255,.35);color:#fff;font-size:1.1rem;width:40px;height:40px;cursor:pointer}
 
 main{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:16px}

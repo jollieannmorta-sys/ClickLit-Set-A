@@ -404,8 +404,10 @@ const ART = {
    ========================================================= */
 const SITE = {
   owner: "Teacher Jollie",
-  title: "Teacher Jollie's Reading Fundamentals",
-  corner: "Teacher Jollie's Reading Corner",
+  brand: "ClickLit",
+  tagline: "Clicking Toward Literacy",
+  title: "ClickLit Set A",
+  corner: "ClickLit: Clicking Toward Literacy",
   school: "Froilan E. Lopez Elementary School",
   place: "Tayabas City",
   logo: "logo.png"
